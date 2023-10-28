@@ -40,7 +40,7 @@ const JoinCreateRoom = ({ uuid, setUser, setRoomJoined }) => {
       <div className="row">
         <div className="col-md-12">
           <h1 className="text-center my-5">
-            Welcome To Realtime Whiteboard Sharing App
+            Whiteboard Sharing App
           </h1>
         </div>
       </div>
