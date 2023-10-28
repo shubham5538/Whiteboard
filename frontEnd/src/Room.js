@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { toast } from "react-toastify";
 import Canvas from "./Canvas";
+import "./Room.css";
 
 const Room = ({ userNo, socket, setUsers, setUserNo }) => {
   const canvasRef = useRef(null);
@@ -51,8 +52,11 @@ const Room = ({ userNo, socket, setUsers, setUserNo }) => {
   return (
     <div className="container-fluid">
       <div className="row">
-        <h1 className="display-5 pt-4 pb-3 text-center">
-          React Drawing App - users online:{userNo}
+        <h1
+          className="display-5 pt-4 pb-3 text-center"
+          style={{ color: "Green" }}
+        >
+          React Drawing App - online: {userNo}
         </h1>
       </div>
       <div className="row justify-content-center align-items-center text-center py-2">
